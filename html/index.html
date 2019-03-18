@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../css/main.css" />
+<script src="../js/main.js"></script>
+
+<head>
+    <title>I know you are weak in MATHS :P</title>
+    <h1>
+        Scientific Calculator
+    </h1>
+</head>
+
+<body>
+    <p id=myPara></p>
+    <p id=myAns>0</p>
+    <table>
+        <tr>
+            <td onclick="ac()">AC</td>
+            <td onclick="shiftFn(1)" id=shiftBtn>Shift</td>
+            <td onclick="input('1')">1</td>
+            <td onclick="input('2')">2</td>
+            <td onclick="input('3')">3</td>
+            <td rowspan=7><input id=result></td>
+        </tr>
+        <tr>
+            <td onclick="input('!')">!</td>
+            <td onclick="sqrt()">sqrt</td>
+            <td onclick="input('4')">4</td>
+            <td onclick="input('5')">5</td>
+            <td onclick="input('6')">6</td>
+        </tr>
+        <tr>
+            <td onclick="trigo('sin')">sin</td>
+            <td onclick="leftParen()">(</td>
+            <td onclick="input('7')">7</td>
+            <td onclick="input('8')">8</td>
+            <td onclick="input('9')">9</td>
+        </tr>
+        <tr>
+            <td onclick="trigo('cos')">cos</td>
+            <td onclick="input(')')">)</td>
+            <td onclick="input('.')">.</td>
+            <td onclick="input('0')">0</td>
+            <td onclick="pi('pi')">&pi;</td>
+        </tr>
+        <tr>
+            <td onclick="trigo('tan')">tan</td>
+            <td onclick="log(1)">log</td>
+            <td onclick="input('+')">+</td>
+            <td onclick="input('-')">-</td>
+            <td onclick="equal()">=</td>
+        </tr>
+        <tr>
+            <td onclick="ans()">Old Ans</td>
+            <td onclick="input('^(')">^</td>
+            <td onclick="multOrDiv('mult')">x</td>
+            <td onclick="multOrDiv('div')">/</td>
+            <td onclick="del()"><img src="../assests/backspace.png" width="45px" height="50px"></a></td>
+        </tr>
+    </table>
+</body>
+
+</html>
